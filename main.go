@@ -43,7 +43,7 @@ func main() {
 
 func chk(err error) {
 	if err != nil {
-		fmt.Fprintln(os.Stdin, fmt.Errorf("pstr: %w", err))
+		fmt.Fprintln(os.Stdout, fmt.Errorf("pstr: %w", err))
 		os.Exit(1)
 	}
 }
